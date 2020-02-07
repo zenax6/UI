@@ -88,16 +88,22 @@ uzd4([1,2,3]);
 /////////// UZDEVUMS 5 \\\\\\\\\\\\
 
 // WAT
-function uzd5(){
-
+function uzd5(x,y){
+if (x==y){
+return x+y;
+}else{
+return 3*(x+y);
 }
+}
+
+console.log(uzd5(2,2));
+console.log(uzd5(2,3));
+
 /////////// UZDEVUMS 6 \\\\\\\\\\\\
 function uzd6(){
 
 }
 
-//5.Izveidot funkciju, kura atgriež divu doto veselo skaitļu summu, XXX
-//ja tie nesakrīt vai trīskāršo skaitļu summu, ja tie sakrīt.
 //6.Izveidot  funkciju, kas saņem lietotāja vārdu unparoli.Ja kāds no mainīgajiem nav ievadīts vai paroles garums ir mazāks par 12 simboliem, izvada atbilstošo kļūdas paziņojumu.
  //7.Izveidot  funkciju,  kas no dotā masīva izņempirmo un pēdējo elementuun atgriež jaunu masīvu.  Jaunā masīva elementu skaits var būt viens vai divi.   Funkcija ieviest nepieciešamās pārbaudesun paziņojumu izvadi.
   //8.Izveidot  objektu Raksts ar šādām īpašībām: virsraksts,  autors,  saturs,  patik.Īpašībaipatīkjābūt masīvam,  kurā iespējams pievienot un dzēst elementus.  Izveidot metodes: lasīšanas ilgums, pieskirtPatik un nonemtPatik.   Lasīšanas ilgums jāaprēķina izdalot satura daļas simbolu skaitu   ar 1500 (vidējais simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs.  Metode pieskirtPatik pievienounikāluid masīvā patik.  Metode nonemtPatik izdzēš no masīva patik elementuar unikālu id.
