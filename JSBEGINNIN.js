@@ -1,4 +1,4 @@
-/// Parbaudit failu izmaiņas   -- git status
+﻿/// Parbaudit failu izmaiņas   -- git status
 //  Ievietot visus failus -- git add .
 //  Ievietot commentāru  
 //  par tapšanas brīdi --  git commit -m "RAKSTI KOMENTU ŠEIT"
@@ -96,7 +96,7 @@ function uzd6(){
 
 }
 
-//5.Izveidot funkciju, kura atgriež divu doto veselo skaitļu summu, 
+//5.Izveidot funkciju, kura atgriež divu doto veselo skaitļu summu, XXX
 //ja tie nesakrīt vai trīskāršo skaitļu summu, ja tie sakrīt.
 //6.Izveidot  funkciju, kas saņem lietotāja vārdu unparoli.Ja kāds no mainīgajiem nav ievadīts vai paroles garums ir mazāks par 12 simboliem, izvada atbilstošo kļūdas paziņojumu.
  //7.Izveidot  funkciju,  kas no dotā masīva izņempirmo un pēdējo elementuun atgriež jaunu masīvu.  Jaunā masīva elementu skaits var būt viens vai divi.   Funkcija ieviest nepieciešamās pārbaudesun paziņojumu izvadi.
