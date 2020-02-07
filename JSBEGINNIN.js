@@ -11,8 +11,8 @@ function tekstaApgriesana(str) {
 }
 console.log(tekstaApgriesana("JEVGENIJS ZAHAROVS"));
 // rezultats :  'SVORAHAZ SJINEGVEJ'
-
-/////////// UZDEVUMS 1 \\\\\\\\\\\\
+console.log("------------");
+/////////// UZDEVUMS 2 \\\\\\\\\\\\
 function salidzinasana(num1, num2) {
     if(num1==5||num2==5||num1+num2==5){
         return true;
@@ -24,7 +24,7 @@ console.log(salidzinasana(5,1) + "  5/1");
 console.log(salidzinasana(2,5)+ "  2/5");
 console.log(salidzinasana(4,1)+ "  4/1");
 console.log(salidzinasana(3,1)+ "  3/1");
-
+console.log("------------");
 /////////// UZDEVUMS 3 \\\\\\\\\\\\
 function arycount(array) {
     var count=0;
@@ -35,7 +35,7 @@ function arycount(array) {
 }
 
 console.log(arycount([1,2,3,4,5])+ " 1,2,3,4,5");
-
+console.log("------------");
 /////////// UZDEVUMS 4 \\\\\\\\\\\\
 function uzd4 (array){
     var a,b;
@@ -84,7 +84,7 @@ uzd4([]);
 uzd4([1,2,"a"]);
 uzd4([1,4]);
 uzd4([1,2,3]);
-
+console.log("------------");
 /////////// UZDEVUMS 5 \\\\\\\\\\\\
 
 // WAT
@@ -98,13 +98,27 @@ return 3*(x+y);
 
 console.log(uzd5(2,2));
 console.log(uzd5(2,3));
-
+console.log("------------");
 /////////// UZDEVUMS 6 \\\\\\\\\\\\
-function uzd6(){
-
+function uzd6(L,P){
+if (L==""||P==""||P.length<12){
+console.log("ERROR SOMETHNIG WENT WRONG")
+}else{
+    console.log("LOGIN : "+L);
+    console.log("PASSWORD : "+ P);
 }
-
-//6.Izveidot  funkciju, kas saņem lietotāja vārdu unparoli.Ja kāds no mainīgajiem nav ievadīts vai paroles garums ir mazāks par 12 simboliem, izvada atbilstošo kļūdas paziņojumu.
+}
+uzd6("THENAME","PASSWORD1234");
+console.log("______________");
+uzd6("SUPERDUPER","PAROLE");
+console.log("______________");
+uzd6("SUPERDUPER","");
+console.log("______________");
+uzd6("","PAROLE");
+console.log("------------");
+//6.Izveidot  funkciju, kas saņem lietotāja vārdu unparoli.
+//Ja kāds no mainīgajiem nav ievadīts vai paroles garums ir mazāks par 12 simboliem,
+ //izvada atbilstošo kļūdas paziņojumu.
  //7.Izveidot  funkciju,  kas no dotā masīva izņempirmo un pēdējo elementuun atgriež jaunu masīvu.  Jaunā masīva elementu skaits var būt viens vai divi.   Funkcija ieviest nepieciešamās pārbaudesun paziņojumu izvadi.
   //8.Izveidot  objektu Raksts ar šādām īpašībām: virsraksts,  autors,  saturs,  patik.Īpašībaipatīkjābūt masīvam,  kurā iespējams pievienot un dzēst elementus.  Izveidot metodes: lasīšanas ilgums, pieskirtPatik un nonemtPatik.   Lasīšanas ilgums jāaprēķina izdalot satura daļas simbolu skaitu   ar 1500 (vidējais simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs.  Metode pieskirtPatik pievienounikāluid masīvā patik.  Metode nonemtPatik izdzēš no masīva patik elementuar unikālu id.
   //9.Izveidot klasi Uznemums ar īpašībām:  nosaukums,  forma  (sia,  as,  mu,  bo),   registrācijas  dati(numurs,  datums), juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),   tālrunis,nodokļu parādi, datu atjaunošanasdatums.Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu atjaunošanas datumu un nodokļu parādu.  Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
