@@ -116,10 +116,33 @@ uzd6("SUPERDUPER","");
 console.log("______________");
 uzd6("","PAROLE");
 console.log("------------");
-//6.Izveidot  funkciju, kas saņem lietotāja vārdu unparoli.
-//Ja kāds no mainīgajiem nav ievadīts vai paroles garums ir mazāks par 12 simboliem,
- //izvada atbilstošo kļūdas paziņojumu.
- //7.Izveidot  funkciju,  kas no dotā masīva izņempirmo un pēdējo elementuun atgriež jaunu masīvu.  Jaunā masīva elementu skaits var būt viens vai divi.   Funkcija ieviest nepieciešamās pārbaudesun paziņojumu izvadi.
+
+function uzd7(ARRAY){
+    var mid=[] ;
+    var side=[] ;
+    var string1=""; 
+    var string2=""; 
+    for ( i = 1; i < ARRAY.length-1; i++) {
+      mid[i]=ARRAY[i];
+        
+    }
+    side[0]=ARRAY[0];
+    if (ARRAY.length>1)
+    {
+
+        side[1]=ARRAY[ARRAY.length-1];
+    }   
+    console.log("NEW :"+mid.toString()+ "    OLD :"+side.toString());
+
+}
+uzd7([1,2,3,4,"a","b","c","d"]);
+uzd7([1,2]);
+uzd7([1]);
+ //7.Izveidot  funkciju,  
+ //kas no dotā masīva izņem pirmo un pēdējo elementu 
+ //un atgriež jaunu masīvu.  
+ //Jaunā masīva elementu skaits var būt viens vai divi. 
+ //  Funkcija ieviest nepieciešamās pārbaudes un paziņojumu izvadi.
   //8.Izveidot  objektu Raksts ar šādām īpašībām: virsraksts,  autors,  saturs,  patik.Īpašībaipatīkjābūt masīvam,  kurā iespējams pievienot un dzēst elementus.  Izveidot metodes: lasīšanas ilgums, pieskirtPatik un nonemtPatik.   Lasīšanas ilgums jāaprēķina izdalot satura daļas simbolu skaitu   ar 1500 (vidējais simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs.  Metode pieskirtPatik pievienounikāluid masīvā patik.  Metode nonemtPatik izdzēš no masīva patik elementuar unikālu id.
   //9.Izveidot klasi Uznemums ar īpašībām:  nosaukums,  forma  (sia,  as,  mu,  bo),   registrācijas  dati(numurs,  datums), juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),   tālrunis,nodokļu parādi, datu atjaunošanasdatums.Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu atjaunošanas datumu un nodokļu parādu.  Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
  // 10.Izveidot   lasi SIA, kas manto klases Uzņēmums īpašības un metodes. Iestātīt īpašībai  forma  vērtību ‘sia’un  pievienot  papildus  īpašības:pamatkapitāls,dibinātājs (masīvs ar objektiem (vārds, uzvārds,  personas kods). Pievienot metodi pievienotDibinataju un   dibinatajuSaraksts,   kura   izvadauzņēmuma nosaukumu, reģistrācijasdatumuun dibinātāju datus
