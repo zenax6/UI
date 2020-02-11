@@ -194,8 +194,69 @@ pieskirtPatik("TEST3");
 pieskirtPatik("TEST4");
 nonemtPatik(3);
 display();
+console.log("------------");
 
-  //9.Izveidot klasi Uznemums ar īpašībām:  nosaukums,  forma  (sia,  as,  mu,  bo),   registrācijas  dati(numurs,  datums), juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),   tālrunis,nodokļu parādi, datu atjaunošanasdatums.Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu atjaunošanas datumu un nodokļu parādu.  Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
+
+class Uznemums {
+    
+    constructor(Nosaukums,Forma,Regdat_num,Regdat_dat,adrese_iela,adrese_numurs,adrese_pilseta,adrese_novads,adrese_valsts,adrese_pastaindex,
+        talrunis,nodokluparadi,datuatjaunosanasdatums ) {
+      this.UznemumaNosaukums = Nosaukums;
+        this.forma = Forma;
+        this.regnum = Regdat_num;
+        this.regdati = Regdat_dat;
+        this.iela = adrese_iela;
+        this.numurs = adrese_numurs;
+        this.pilseta = adrese_pilseta;
+        this.novads = adrese_novads;
+        this.valsts = adrese_valsts;
+        this.pasts = adrese_pastaindex;
+        this.Talrunis=talrunis;
+        this.nod_paradi=nodokluparadi;
+        this.datuatjaun=datuatjaunosanasdatums;
+
+        this.GETParadi = function () { // it can access private members
+            console.log("Datu atjaunošanas datums: "+this.datuatjaun + " Nodokļu parāds: "+this.nod_paradi);
+          };
+          this.SETParadi = function (datuatjn,nodpar) { // it can access private members
+           this.datuatjaun=datuatjn;
+           this.nod_paradi=nodpar;
+          };
+        
+      }
+  }
+  jaunsuznmenums=new Uznemums("UZNMnusaukums","FORMA","REGNUm","REGDAT",
+  "iela","numurs","pilseta","novads","valsts","pasts"
+  ,"28888888","25$",2019);
+function UznemumaIzvade(Uznemums){
+    console.log(Uznemums.UznemumaNosaukums );
+    console.log(Uznemums.forma );
+    console.log(Uznemums.regnum );
+    console.log(Uznemums.regdati );
+    console.log(Uznemums.iela );
+    console.log(Uznemums.numurs );
+    console.log(Uznemums.pilseta );
+    console.log(Uznemums.novads );
+    console.log(Uznemums.valsts );
+    console.log(Uznemums.pasts );
+    console.log(Uznemums.Talrunis );
+    console.log(Uznemums.nod_paradi );
+    console.log(Uznemums.datuatjaun );
+    
+}
+
+jaunsuznmenums.GETParadi();
+jaunsuznmenums.SETParadi(2011,"500 $");
+jaunsuznmenums.GETParadi();
+  console.log("------------");
+  //9.Izveidot klasi Uznemums ar īpašībām: 
+  // nosaukums,  forma  (sia,  as,  mu,  bo),   
+  //registrācijas  dati(numurs,  datums), 
+  //juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),  
+  // tālrunis,nodokļu parādi, datu atjaunošanasdatums.
+  //Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu 
+  //atjaunošanas datumu un nodokļu parādu. 
+  // Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
  // 10.Izveidot   lasi SIA, kas manto klases Uzņēmums īpašības un metodes. Iestātīt īpašībai  forma  vērtību ‘sia’un  pievienot  papildus  īpašības:pamatkapitāls,dibinātājs (masīvs ar objektiem (vārds, uzvārds,  personas kods). Pievienot metodi pievienotDibinataju un   dibinatajuSaraksts,   kura   izvadauzņēmuma nosaukumu, reģistrācijasdatumuun dibinātāju datus
 
  // GIT BASH test changes at 9-02
