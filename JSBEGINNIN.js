@@ -154,4 +154,4 @@ var Raksts = {virsraksts,Autors,saturs,patik};
   //9.Izveidot klasi Uznemums ar īpašībām:  nosaukums,  forma  (sia,  as,  mu,  bo),   registrācijas  dati(numurs,  datums), juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),   tālrunis,nodokļu parādi, datu atjaunošanasdatums.Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu atjaunošanas datumu un nodokļu parādu.  Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
  // 10.Izveidot   lasi SIA, kas manto klases Uzņēmums īpašības un metodes. Iestātīt īpašībai  forma  vērtību ‘sia’un  pievienot  papildus  īpašības:pamatkapitāls,dibinātājs (masīvs ar objektiem (vārds, uzvārds,  personas kods). Pievienot metodi pievienotDibinataju un   dibinatajuSaraksts,   kura   izvadauzņēmuma nosaukumu, reģistrācijasdatumuun dibinātāju datus
 
- // GIT BASH test changes at 9:00
+ // GIT BASH test changes at 9-02
