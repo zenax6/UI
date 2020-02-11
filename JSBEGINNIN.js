@@ -139,18 +139,62 @@ uzd7([1,2,3,4,"a","b","c","d"]);
 uzd7([1,2]);
 uzd7([1]);
 console.log("------------");
+var virsraksts;
+var Autors;
+var saturs;
+var patik;
+
 var Raksts = {virsraksts,Autors,saturs,patik};
 
-  //8.Izveidot  objektu Raksts ar šādām īpašībām: 
- // virsraksts,  autors,  saturs,  patik.
- // Īpašībai patīk jābūt masīvam, 
-  // kurā iespējams pievienot un dzēst elementus. 
-   // Izveidot metodes: lasīšanas ilgums, pieskirt
-    //Patik un nonemt Patik. 
-// Lasīšanas ilgums jāaprēķina izdalot satura daļas simbolu skaitu
-// ar 1500 (vidējais simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs. 
-       //Metode pieskirt Patik pievieno unikālu id masīvā patik. 
-        //Metode nonemt Patik izdzēš no masīva patik elementu ar unikālu id.
+Raksts.virsraksts="THE TITLE";
+Raksts.Autors ="J.ZAHAROVS";
+Raksts.saturs="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+Raksts.patik=[];//Īpašībai patīk jābūt masīvam, kurā iespējams pievienot un dzēst elementus.
+function lasisanasilgums(){// jāaprēķina izdalot satura daļas simbolu skaitu ar 1500 (vidējais 
+                            //simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs. 
+var time =((Raksts.saturs.length / 1500)*60);
+var minutes = Math.floor(time / 60);
+
+
+var seconds = time - minutes * 60;
+console.log("Lasišanas ilgums "+ minutes+" minutes un "+seconds+" sekundes");
+
+
+
+}
+
+
+function pieskirtPatik(patikString){//pievieno unikālu id masīvā patik
+    Raksts.patik.push(patikString);
+    
+}
+function display(){
+    for ( i = 0; i < Raksts.patik.length; i++) {
+        console.log(Raksts.patik[i]);
+    }
+}
+function nonemtPatik(idToDelete){//izdzēš no masīva patik element uar unikālu id.
+          for ( i = 0; i < Raksts.patik.length; i++) {
+              
+              if(i==idToDelete){
+                console.log("Deleted id  : "+idToDelete);   
+                Raksts.patik.splice(idToDelete,1)
+              }else{
+                console.log("NO ID WITH : "+idToDelete);
+              }
+          }
+    
+        }
+    
+lasisanasilgums()
+pieskirtPatik("TEST1");
+pieskirtPatik("TEST2");
+pieskirtPatik("TEST3");
+pieskirtPatik("TEST4");
+nonemtPatik(3);
+display();
+
   //9.Izveidot klasi Uznemums ar īpašībām:  nosaukums,  forma  (sia,  as,  mu,  bo),   registrācijas  dati(numurs,  datums), juridiska  adrese    (iela,  numurs,  pilsēta, novads,  valsts,  pasta  indekss),   tālrunis,nodokļu parādi, datu atjaunošanasdatums.Pievienot tai  get/setmetodes. Get Paradi  metode  izvadadatu atjaunošanas datumu un nodokļu parādu.  Set Paradi ļauj nomainīt nodokļu parādu lielumu un datu atjaunošanas datumu.
  // 10.Izveidot   lasi SIA, kas manto klases Uzņēmums īpašības un metodes. Iestātīt īpašībai  forma  vērtību ‘sia’un  pievienot  papildus  īpašības:pamatkapitāls,dibinātājs (masīvs ar objektiem (vārds, uzvārds,  personas kods). Pievienot metodi pievienotDibinataju un   dibinatajuSaraksts,   kura   izvadauzņēmuma nosaukumu, reģistrācijasdatumuun dibinātāju datus
 
