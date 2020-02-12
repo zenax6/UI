@@ -250,6 +250,34 @@ jaunsuznmenums.SETParadi(2011,"500 $");
 jaunsuznmenums.GETParadi();
   console.log("------------");
 
- // 10.Izveidot   lasi SIA, kas manto klases Uzņēmums īpašības un metodes. Iestātīt īpašībai  forma  vērtību ‘sia’un  pievienot  papildus  īpašības:pamatkapitāls,dibinātājs (masīvs ar objektiem (vārds, uzvārds,  personas kods). Pievienot metodi pievienotDibinataju un   dibinatajuSaraksts,   kura   izvadauzņēmuma nosaukumu, reģistrācijasdatumuun dibinātāju datus
 
- // GIT BASH test changes at 9-02
+
+  class SIA extends Uznemums{
+    constructor (pamatkapitals){
+        super();
+        this.pamkap = pamatkapitals;
+        this.dibin_vards;
+        this.dibin_uzv;
+        this.dibin_pers;
+        this.forma="SIA";
+        this.UznemumaNosaukums="UZNEMUMA NOS";
+        this.regdati="REG DATUMS";
+        
+    //dibitanajts - masīvs ar objektiem (vārds, uzvārds,  personas kods)
+    this.pievienotDibinataju = function (dibinatajs,dibinatajsuzv,dibinatajspers) { // it can access private members
+       this.dibin_vards=dibinatajs;
+       this.dibin_uzv=dibinatajsuzv;
+       this.dibin_pers=dibinatajspers;
+       
+     };
+      this.dibinatajuSaraksts = function () { // it can access private members
+        console.log(this.UznemumaNosaukums+" "+this.regdati+ " "+
+                    this.dibin_vards +" "+this.dibin_uzv+ " "+this.dibin_pers+ " "+this.var1);
+      };
+  }
+}
+jaunsSIA=new  SIA (5);
+jaunsSIA.pievienotDibinataju(["kautkas",123,123,"YES YES YES"],"Jevgenijs","Zaharovs","123123-123321");
+jaunsSIA.dibinatajuSaraksts();
+
+
