@@ -1,6 +1,6 @@
 # FOR LLU UI PROJECT
 
-One Paragraph of project description goes here
+Te kaut kas jaraksta
 
 ## UZD 1
 ```
@@ -298,7 +298,8 @@ jaunsSIA.dibinatajuSaraksts();
 
 ```
 ## Versioning
-* FIRST FULL VERSION RELEASE - *13-02-2020
+* FIRST FULL VERSION RELEASE 
+* 13-02-2020
 
 ## Authors
 
