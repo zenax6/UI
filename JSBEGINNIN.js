@@ -155,13 +155,8 @@ function lasisanasilgums(){// jāaprēķina izdalot satura daļas simbolu skaitu
                             //simboluskaits minūtē)un rezultātu izvadīt minūtēs un sekundēs. 
 var time =((Raksts.saturs.length / 1500)*60);
 var minutes = Math.floor(time / 60);
-
-
 var seconds = time - minutes * 60;
 console.log("Lasišanas ilgums "+ minutes+" minutes un "+seconds+" sekundes");
-
-
-
 }
 
 
